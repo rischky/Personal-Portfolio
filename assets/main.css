@@ -334,6 +334,15 @@ h2 span {
 }
 
 @media screen and (max-width: 564px) {
+
+  body {
+    overflowX: hidden;
+  }
+
+  .main-container {
+    overflowX: hidden;
+  }
+  
   .hero-content {
     width: 100%;
   }
@@ -424,11 +433,13 @@ h2 span {
   }
 
   .box3 .box-video video {
+    user-select: none;
     width: 350px;
     border: 1px solid var(--primary);
   }
 
   .box3 .box-image img {
+    user-select: none;
     margin-top: 50px;
     transform: translateX(5px);
   }
