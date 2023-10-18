@@ -307,14 +307,25 @@
     <!-- End of Main Section -->
 
     <script>
-      // Ambil elemen dengan ID "toggleButton" dan elemen dengan kelas "text-box"
       const toggleShow = document.getElementById("toggleBtn");
       const showUp = document.querySelector(".project3-text-box");
 
       // Tambahkan event listener untuk menangani klik pada tombol
-      toggleShow.addEventListener("click", function () {
+      toggleShow.addEventListener("click", function (event) {
         // Toggle kelas "active" pada elemen "text-box"
         showUp.classList.toggle("muncul");
+        event.stopPropagation(); // Untuk menghentikan event klik dari menyebar ke luar elemen "text-box"
+      });
+
+      // Tambahkan event listener pada dokumen untuk menangani klik di luar "text-box"
+      document.addEventListener("click", function (event) {
+        if (
+          !showUp.contains(event.target) &&
+          !toggleShow.contains(event.target)
+        ) {
+          // Klik terjadi di luar elemen "text-box" dan tombol toggleButton
+          showUp.classList.remove("muncul");
+        }
       });
     </script>
 
