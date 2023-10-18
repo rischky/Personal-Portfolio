@@ -17,6 +17,7 @@
   scroll-behavior: smooth;
   text-decoration: none;
   list-style-type: none;
+  overflowx:hidden;
 }
 
 :root {
