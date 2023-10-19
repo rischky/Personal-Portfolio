@@ -20,14 +20,6 @@
   overflowX:hidden;
 }
 
-html {
-  overflowX: hidden;
-}
-
-div {
-  overflowX: hidden;
-}
-
 :root {
   --bg: #000;
   --primary: #27a776;
