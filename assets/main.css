@@ -17,7 +17,6 @@
   scroll-behavior: smooth;
   text-decoration: none;
   list-style-type: none;
-  overflowX:hidden;
 }
 
 :root {
@@ -30,7 +29,6 @@
 body {
   background-color: var(--bg);
   font-family: var(--font);
-  overflowX: hidden;
   /* height: 3000px; */
 }
 
@@ -285,8 +283,7 @@ h2 span {
 }
 
 .image-left img {
-  width: 350px;
-  height: 600px;
+  width: 400px;
   border-radius: 5px;
 }
 
